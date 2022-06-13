@@ -1,0 +1,407 @@
+body {
+	min-height: 100vh;
+	background: linear-gradient(-37deg, #05BBFA, #05FAEF, #9FFFEC) center/cover no-repeat;
+	font-family: 'museo-sans-300', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.clicky-menu ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	visibility: hidden;
+}
+
+.clicky-menu.no-js li:hover > ul {
+	visibility: visible;
+}
+.clicky-menu.no-js li:focus-within > ul {
+	visibility: visible;
+}
+
+.clicky-menu ul[aria-hidden="false"] {
+	visibility: visible;
+}
+
+.clicky-menu .sub-menu--right {
+	left: auto !important;
+	right: 0 !important;
+}
+
+.site-navigation {
+	width: 100%;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+	background-color: #eee;
+	border-radius: 4px;
+}
+
+.clicky-menu {
+	justify-content: stretch;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+@media (min-width: 540px) {
+	.clicky-menu {
+		display: flex;
+	}
+}
+
+/* General Link & Button Styles */
+.clicky-menu a,
+.clicky-menu button {
+	margin: .25em;
+	padding: 1em;
+	background: transparent;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: inherit;
+	border-radius: 3px;
+}
+
+.clicky-menu a:hover,
+.clicky-menu button:hover {
+	background: #fff;
+}
+
+.clicky-menu a:focus,
+.clicky-menu button:focus {
+	outline: .125em dotted purple;
+	outline-offset: -.125em;
+}
+
+/* Top Level Items */
+.clicky-menu > li {
+	position: relative;
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: stretch;
+	flex-wrap: wrap;
+}
+
+.clicky-menu > li > a,
+.clicky-menu > li > button {
+	flex: 1 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border: 0;
+	font-size: inherit;
+	line-height: 1.5;
+	cursor: pointer;
+}
+@media (min-width: 540px) {
+	.clicky-menu > li > a,
+	.clicky-menu > li > button {
+		justify-content: center;
+	}
+}
+
+/* Icon */
+.clicky-menu svg {
+	width: 1em;
+	height: 1em;
+	margin-left: .5em;
+}
+
+.clicky-menu [aria-expanded="true"] svg {
+	transform: scaleY(-1);
+}
+
+/* Submenu Styles */
+.clicky-menu ul {
+	min-width: 100%;
+	width: 12em;
+	margin-top: .25em;
+	padding: 0;
+	list-style: none;
+	background-color: #eee;
+	border-radius: 3px;
+}
+@media (min-width: 540px) {
+	.clicky-menu {
+		box-shadow: 2px 4px 4px rgba(0,0,0,.2);
+	}
+}
+
+/* Responsive Submenu Behavior */
+.clicky-menu ul[aria-hidden="false"] {
+	position: static;
+	width: 100%;
+	flex: 0 0 auto;
+}
+
+@media (min-width: 540px) {
+	.clicky-menu ul[aria-hidden="false"] {
+		position: absolute;
+		width: auto;
+	}
+}
+
+/* Submenu Links */
+.clicky-menu ul a {
+	display: block;
+	padding-top: .375em;
+	padding-bottom: .375em;
+}
+
+@media (min-width: 540px) {
+	.clicky-menu ul a {
+		padding: .375em 1em;
+		white-space: nowrap;
+	}
+}
+
+
+.footer{
+	font-family: serif;
+	background: #05BBFA;
+	border-top: 4px dotted #9FFFEC;
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	bottom:0;
+}
+
+.multicolumn{
+	column-count: 3;
+	column-gap: 2%;
+	column-rule: 1px solid lightblue;
+}
+
+.floatingTextNotFloating{
+	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+	background-color: #eee;
+	border-radius: 4px;
+	width: 30%;
+	margin: 1%;
+	float: left;
+	font-size: 20px;
+}
+
+@media (max-width: 540px) {
+	.floatingTextNotFloating{
+		box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+		background-color: #eee;
+		border-radius: 4px;
+		width: 30%;
+		margin: 1%;
+		float: left;
+		font-size: 20px;
+	}
+}
+
+
+.underlinedEmail{
+	text-decoration: underline;
+	text-decoration-color: lightblue;
+	text-decoration-style: dotted;
+	font-style: italic;
+	color: teal;
+}
+
+.highlight{
+	background-color: darkred;
+	color: white;
+	text-transform: capitalize;
+	text-decoration-style: wavy;
+	display: inline-block;
+	padding: 3px;
+	font-family: fantasy;
+}
+
+.lastText{
+	text-align: center;
+	background-color: #eee;
+	margin: 5%;
+	padding: 5%;
+}
+
+.text{
+  text-align: center;
+  background-color: #eee;
+  margin: 5%;
+	padding: 5%;
+	color: black;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+	border-radius: 4px;
+}
+
+@media (min-width: 540px){
+	.text{
+		flex-direction: column;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		background-color: #eee;
+		margin: 5%;
+		padding: 5%;
+	}
+}
+
+.timeString{
+	text-align: center;
+}
+
+.floatingText{
+	display: inline-block;
+}
+
+
+input[type=text], select, textarea, input[type=email], input[type=number], input[type=checkbox]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.slideshow-container {
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: sticky;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.textGallery {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fading {
+  animation-name: fading;
+  animation-duration: 1.5s;
+}
+
+@keyframes fading {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.fade, .active, .dot, .numbertext, .text, .prev, .next, .mySlides, .slideshow-container {
+	box-sizing:border-box;
+}
+
+.animationSpace {
+  position: relative;
+	width: 100%;
+  margin: auto;
+	max-height: 200px;
+	max-width: 200px;
+	align-self: center;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.textGallery {font-size: 11px}
+}

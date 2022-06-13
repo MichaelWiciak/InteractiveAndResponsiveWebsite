@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="../clicky-menus.js"></script>
+	<link rel="stylesheet" href="main.css" />
+	<title>Nature Blog MW</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../Images/IMG_0435.jpeg">
+	<meta name="description" content="Nature Blog by Michael Wiciak">
+	<meta name="keywords" content="Nature, blog, Michael, Wiciak">
+	<meta name="author" content="Michael Wiciak">
+	<script type="../time.js"></script>
+	<script type="../geolocation.js"></script>
+	<script type="../siteVisited.js"></script>
+	<script src="../darkMode.js"></script>
+	<script src="../randomBackground.js"></script>
+	<script src="../changeImageSize.js"></script>
+	<script src="../settings.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../showDarkModeText.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav id="site-navigation" class="site-navigation" aria-label="Clickable Menu Demonstration">
+		<ul class="main-menu clicky-menu no-js">
+			<li>
+				<a href="home.html">Home</a>
+			</li>
+			<li>
+				<a href="#">
+					Blogs
+					<svg aria-hidden="true" width="16" height="16">
+						<use xlink:href="#arrow" />
+					</svg>
+				</a>
+				<ul>
+					<li><a href="blog1.html">Warsaw City Centre Blog</a></li>
+					<li><a href="blog2.html">Warsaw Royal Baths Blog</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					Statistics
+					<svg aria-hidden="true" width="16" height="16">
+						<use xlink:href="#arrow" />
+					</svg>
+				</a>
+				<ul>
+					<li><a href="#">This page has been visited <div class="floatingText" id="counter">Error
+				</div> times.</a></li> <script src="../siteVisited.js"></script>
+        <li><button onclick="geolocation()">Show</button> <button onclick="resetLocation()">Reset</button> <a href="#">You are in:<p id="location">No Geolocation Data saved</p></a><script src="../geolocation.js"></script>
+        </li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					About
+					<svg aria-hidden="true" width="16" height="16">
+						<use xlink:href="#arrow" />
+					</svg>
+				</a>
+				<ul>
+					<li><a href="settings.html">Settings</a></li>
+					<li><a href="forms.html">Forms & Contact</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+<div id="photoGallery" class="text">
+
+  <h1>Photos from the day</h1>
+  <div class="textGallery">
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fading">
+        <div class="numbertext">1 / 5</div>
+        <img src="../Images/IMG_0432.jpeg" alt="Photo of the canal bridge." style="width:100%">
+        <div class="textGallery">Canal Bridge Mini Waterfall</div>
+      </div>
+
+      <div class="mySlides fading">
+        <div class="numbertext">2 / 5</div>
+        <img src="../Images/IMG_0433.jpeg" alt="Photo of the canal bridge." style="width:100%">
+        <div class="textGallery">Canal Bridge Mini Waterfall Part 2</div>
+      </div>
+
+      <div class="mySlides fading">
+        <div class="numbertext">3 / 5</div>
+        <img src="../Images/IMG_0434.jpeg" alt="Photo of the canal bridge." style="width:100%">
+        <div class="textGallery">The sky</div>
+      </div>
+
+      <div class="mySlides fading">
+        <div class="numbertext">4 / 5</div>
+        <img src="../Images/IMG_0436.jpeg" alt="Photo of the canal bridge." style="width:100%">
+        <div class="textGallery">The brown water?</div>
+      </div>
+
+      <div class="mySlides fading">
+        <div class="numbertext">5 / 5</div>
+        <img src="../Images/IMG_0438.jpeg" alt="Photo of the canal bridge." style="width:100%">
+        <div class="textGallery">The clean water</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+  </div>
+</div>
+<script src="../gallery.js"></script>
+<div class="text">
+  <h1>Random HTML Text</h1>
+
+  				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
+
+  				<h2>Header Level 2</h2>
+
+  				<ol>
+  				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  				   <li>Aliquam tincidunt mauris eu risus.</li>
+  				</ol>
+
+  				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+  				<h3>Header Level 3</h3>
+
+  				<ul>
+  				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  				   <li>Aliquam tincidunt mauris eu risus.</li>
+  				</ul>
+</div>
+<div class ="text">
+  <p id="DarkModetext">Dark Mode is OFF</p>
+  <p>DarkMode Text Indicator
+  <button id="hide">Hide</button>
+  <button id="show">Show</button></p>
+  <p>Gallery photo closure
+  <button id="hideButtonGallery">X</button></p>
+</div>
+<div class="footer">
+	<div class="floatingTextNotFloating">
+		<p>You can send me an email at <a href="mailto:ed203mw@leeds.ac.uk?subject=NatureBlogFeedback"><u class="underlinedEmail"><strong
+			>email</strong></u></a>.</p>
+		<p>Visit my <a href="https://github.com/MichaelWiciak"><code><u class="underlinedEmail">Github website</u></code></a> for more.</p>
+
+	</div>
+	<div class="floatingTextNotFloating">
+    <p>Currently, the time is:</p>
+		<u id="time" class="underlinedEmail timeString">
+			<script src="../time.js"></script>
+		</u>
+	</div>
+	<div class="floatingTextNotFloating">
+		<footer><em>Copyright @ <strong>Michael Wiciak 2022</strong> </em><br>Credits for website making: <div class="highlight">
+			Michael Wiciak</div></footer>
+	</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

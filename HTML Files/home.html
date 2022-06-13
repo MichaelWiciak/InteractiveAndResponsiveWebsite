@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="../clicky-menus.js"></script>
+	<link rel="stylesheet" href="main.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<title>Nature Blog MW</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../Images/IMG_0435.jpeg">
+	<meta name="description" content="Nature Blog by Michael Wiciak">
+	<meta name="keywords" content="Nature, blog, Michael, Wiciak">
+	<meta name="author" content="Michael Wiciak">
+	<script type="../time.js"></script>
+	<script src="../geolocation.js"></script>
+	<script type="../siteVisited.js"></script>
+	<script src="../darkMode.js"></script>
+	<script src="../randomBackground.js"></script>
+	<script src="../changeImageSize.js"></script>
+	<script src="../settings.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../showDarkModeText.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav id="site-navigation" class="site-navigation" aria-label="Clickable Menu Demonstration">
+		<ul class="main-menu clicky-menu no-js">
+			<li>
+				<a href="home.html">Home</a>
+			</li>
+			<li>
+				<a href="#">
+					Blogs
+					<svg aria-hidden="true" width="16" height="16">
+						<use xlink:href="#arrow" />
+					</svg>
+				</a>
+				<ul>
+					<li><a href="blog1.html">Warsaw City Centre Blog</a></li>
+					<li><a href="blog2.html">Warsaw Royal Baths Blog</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					Statistics
+					<svg aria-hidden="true" width="16" height="16">
+						<use xlink:href="#arrow" />
+					</svg>
+				</a>
+				<ul>
+					<li><a href="#">This page has been visited <div class="floatingText" id="counter">Error
+				</div> times.</a></li> <script src="../siteVisited.js"></script>
+					<li><button onclick="geolocation()">Show</button> <button onclick="resetLocation()">Reset</button> <a href="#">You are in:<p id="location">No Geolocation Data saved</p></a><script src="../geolocation.js"></script>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					About
+					<svg aria-hidden="true" width="16" height="16">
+						<use xlink:href="#arrow" />
+					</svg>
+				</a>
+				<ul>
+					<li><a href="settings.html">Settings</a></li>
+					<li><a href="forms.html">Forms & Contact</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+<div id="animationContainer" class="text">
+	<h1>Canvas Javascript Animation</h1>
+	<canvas id="animationSpace" class="animationSpace" width="200" height="200"></canvas>
+	<script src="../animation.js"></script>
+</div>
+<div class="text">
+ <h1>Home Page</h1>
+ <h3>By Michael Wiciak</h3>
+ <h2>Welcome to my Javascript Website</h2>
+ <p>Please browse over the page and see all of the features of the website. <br> The website is fully responsive to different resolutions of devices so feel free to check that. <br> The full list of features can be found in the documentation. </p>
+</div>
+<div class ="text"> <h1>Experimentation Area</h1>
+  <p id="DarkModetext">Dark Mode is OFF</p>
+  <p>DarkMode Text Indicator
+  <button id="hide">Hide</button>
+  <button id="show">Show</button></p>
+  <p>Animation closure
+  <button id="hideButtonAnimation">X</button></p>
+	<p>Show HTML/Text content of the Animation:
+		<button id="showHTML">HTML</button>
+		<button id="showText">Text</button>
+		<button id="hideHTMLText">X</button>
+	<p id="result"></p>
+	<p>Show Animation container information
+	<button id="infoOfContainer">Show</button>
+	<button id="hideDataOfContainer">X</button>
+	<p id="containerData"></p>
+	<div>Your name is
+		<p id="userNameDisplay"></p> <button onclick="loadUsername()">Load</button>
+		<p>Change name:
+  		<input type="text" id="usernameInput">
+		</p>
+	<button id="userNameChange">Save</button>
+	</div>
+</div>
+<div class="footer">
+	<div class="floatingTextNotFloating">
+		<p>You can send me an email at <a href="mailto:ed203mw@leeds.ac.uk?subject=NatureBlogFeedback"><u class="underlinedEmail"><strong
+			>email</strong></u></a>.</p>
+		<p>Visit my <a href="https://github.com/MichaelWiciak"><code><u class="underlinedEmail">Github website</u></code></a> for more.</p>
+
+	</div>
+	<div class="floatingTextNotFloating">
+		<p>Currently, the time is:</p>
+		<u id="time" class="underlinedEmail timeString">
+			<script src="../time.js"></script>
+		</u>
+	</div>
+	<div class="floatingTextNotFloating">
+		<footer><em>Copyright @ <strong>Michael Wiciak 2022</strong> </em><br>Credits for website making: <div class="highlight">
+			Michael Wiciak</div></footer>
+	</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
